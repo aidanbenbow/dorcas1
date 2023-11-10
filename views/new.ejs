@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper flex">
+        <form action="/reports" method="post">
+        <%- include('_form_fields')%>
+        
+        <div  class="flex mb10">
+            <button type="submit">Save</button>
+            <a href="http://localhost:5000/">cancel</a>
+        </div>
+        </form>
+    </div>
+
+  <!--  <script>
+        const name = document.getElementById('name'),
+      btn = document.querySelector('button')
+      
+      let student, data
+      
+      const options = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+      }
+      
+      btn.addEventListener('click', async (e)=>{
+      //e.preventDefault()
+     student  = name.value
+     data = {student,student}
+      
+     const resp = await fetch('/new', options)
+     const jso = await resp.json()
+     console.log(jso)
+    })
+      </script>-->
+    
+</body>
+</html>
